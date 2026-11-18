@@ -1,0 +1,26 @@
+[project]
+name = "gateway"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Shubhankar Marathe", email = "shubhankarsourabhmarathe@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "bcrypt>=5.0.0",
+    "bullmq>=3.6.2",
+    "fastapi[standard]>=0.163.1",
+    "httpx>=0.28.1",
+    "pyjwt>=2.15.1",
+    "pymysql>=1.2.4",
+    "redis>=8.1.0",
+    "sqlmodel>=0.0.50",
+]
+
+[project.scripts]
+gateway = "gateway:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"

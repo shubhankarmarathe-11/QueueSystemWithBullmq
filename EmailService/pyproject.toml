@@ -1,0 +1,29 @@
+[project]
+name = "emailservice"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Shubhankar Marathe", email = "shubhankarsourabhmarathe@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.141.1",
+    "httpx>=0.28.1",
+    "phonenumbers>=9.0.38",
+    "pyjwt>=2.13.0",
+    "redis>=8.1.0",
+    "bcrypt>=5.0.0",
+    "emails>=1.1.2",
+    "pymysql>=1.2.0",
+    "sqlmodel>=0.0.39",
+    "bullmq>=3.6.2",
+]
+
+[project.scripts]
+emailservice = "emailservice:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
